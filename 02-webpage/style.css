@@ -1,0 +1,102 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
+    line-height: 1.7;
+}
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    background: #FFD000;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #111;
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+/* ===========================
+   MAIN
+=========================== */
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+main div {
+    background: #FFD000;
+    color: #111;
+    text-align: center;
+    padding: 80px 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+main div h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    color: #FFD000;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+strong {
+    color: #FFD000;
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    background: #FFD000;
+    color: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+}
