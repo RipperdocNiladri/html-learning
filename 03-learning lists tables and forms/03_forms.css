@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    overflow: auto;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    background: #00f5ff;
+    border-radius: 50%;
+    filter: blur(150px);
+    top: -120px;
+    left: -120px;
+    opacity: .5;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    background: #ff00d4;
+    border-radius: 50%;
+    filter: blur(160px);
+    bottom: -120px;
+    right: -120px;
+    opacity: .45;
+}
+
+form {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, .08);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .35), 0 0 25px rgba(0, 255, 255, .15);
+    animation: fadeIn .8s ease;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px cyan;
+}
+
+div {
+    margin-bottom: 22px;
+}
+
+label,
+p {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: .4px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    outline: none;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .12);
+    color: white;
+    font-size: 15px;
+    transition: .35s;
+    border: 2px solid transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ddd;
+}
+
+select option {
+    color: #000;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 10px #00e5ff, 0 0 25px rgba(0, 229, 255, .4);
+    transform: translateY(-2px);
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    accent-color: #00e5ff;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #7b2ff7);
+    background-size: 300%;
+    transition: .4s;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-position: right;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 114, 255, .45), 0 0 20px cyan;
+}
+
+button:active {
+    transform: scale(.98);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#00c6ff, #7b2ff7);
+    border-radius: 20px;
+}
+
+@media(max-width:650px) {
+    body {
+        padding: 20px;
+    }
+    form {
+        padding: 25px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    input,
+    select,
+    textarea {
+        padding: 12px;
+    }
+}
