@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOOD HUB</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind (the pasted markup relies on Tailwind utility classes) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            colors: {
+              /* re-mapped to the FOOD HUB black / yellow / white palette */
+              zRed500: "#0a0a0c",
+              zRed100: "#ffe9ad",
+              comet: "#55555c",
+              slateGrey: "#7a7a82",
+              lavenderMist: "#e9e9e3",
+            },
+            fontSize: {
+              heading: [
+                "clamp(1.9rem, 4vw, 3rem)",
+                { lineHeight: "1.15", fontWeight: "700" },
+              ],
+              subtitle: ["clamp(1rem, 1.6vw, 1.15rem)", { lineHeight: "1.65" }],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="food hub logo" />
+      </div>
+      <ul>
+        <li><a href=""></a>Investor Relations</li>
+        <li><a href=""></a>Add Resturant</li>
+        <li><a href=""></a>Login</li>
+        <li><a href=""></a>Signup</li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <!-- use img/bg.png as background -->
+        <img src="images/logo.png" aly="" />
+        <p>Discover the best food and drinks in Kolkata</p>
+        <input placeholder="Search for resturant, cuisine or a dish" />
+      </section>
+
+      <section class="showcase-section">
+        <div
+          class="showcase-card relative mx-auto flex h-[28em] w-full max-w-[1880px] items-center justify-center rounded-t-3xl bg-white md:h-[40em] overflow-visible"
+        >
+          <div
+            class="string-deco absolute left-0 top-[32px] h-auto w-[70%] translate-x-[-70%]"
+          >
+            <img loading="lazy" src="images/string.png" class="h-auto w-full" />
+          </div>
+          <div
+            class="string-deco absolute right-0 top-[-20%] h-auto w-[70%] translate-x-[65%]"
+          >
+            <img loading="lazy" src="images/string.png" class="h-auto w-full" />
+          </div>
+          <div
+            class="absolute top-[142px] flex flex-col items-center gap-6 2xl:gap-8 justify-center md:top-[240px]"
+          >
+            <div
+              class="text-heading w-5/12 whitespace-pre-line text-center font-semibold text-zRed500 md:w-5/12 lg:w-8/12"
+            >
+              Better food for more people
+            </div>
+            <div
+              class="text-subtitle w-5/12 text-center font-light text-comet md:w-5/12"
+            >
+              For over a decade, we’ve enabled our customers to discover new
+              tastes, delivered right to their doorstep
+            </div>
+          </div>
+          <img
+            src="https://b.zmtcdn.com/data/o2_assets/110a09a9d81f0e5305041c1b507d0f391743058910.png"
+            class="float-photo absolute top-[40%] w-[130px] md:w-[min(22%,240px)] rounded-lg left-[8%] xl:left-[15%]"
+          /><img
+            src="https://b.zmtcdn.com/data/o2_assets/b4f62434088b0ddfa9b370991f58ca601743060218.png"
+            class="float-photo absolute right-[10%] top-[15%] z-30 aspect-[420/370] w-[120px] md:w-[min(24%,240px)] rounded-lg xl:right-[15%] xl:top-8"
+          /><img
+            src="https://b.zmtcdn.com/data/o2_assets/316495f4ba2a9c9d9aa97fed9fe61cf71743059024.png"
+            class="float-photo absolute right-[12%] bottom-[10%] xl:bottom-10 xl:right-[10%] aspect-square w-[124px] md:w-[min(24%,240px)] rounded-lg"
+          /><img
+            src="https://b.zmtcdn.com/data/o2_assets/70b50e1a48a82437bfa2bed925b862701742892555.png"
+            class="doodle absolute top-[10%] left-[30%] w-8 xl:w-12 aspect-[92/67] rotate-2"
+          /><img
+            src="https://b.zmtcdn.com/data/o2_assets/9ef1cc6ecf1d92798507ffad71e9492d1742892584.png"
+            class="doodle absolute right-[12%] xl:right-[8%] xl:bottom-[55%] w-8 xl:w-12 aspect-[158/125] rotate-45"
+          /><img
+            src="https://b.zmtcdn.com/data/o2_assets/9ef1cc6ecf1d92798507ffad71e9492d1742892584.png"
+            class="doodle absolute bottom-[10%] left-[20%] xl:bottom-[2%] xl:left-[10%] w-8 xl:w-12 aspect-[158/125] -rotate-2"
+          />
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <div
+          class="stats-card z-50 bg-white mx-auto flex w-fit max-w-screen-lg items-center justify-center gap-8 rounded-2xl border-[0.64px] border-zRed100 px-4 py-3 shadow-[0px_2.777px_13.401px_0px_rgba(0,0,0,0.09)] lg:rounded-[32px] lg:px-7 lg:py-6 2xl:gap-12 2xl:mt-14"
+        >
+          <div class="flex items-center">
+            <div class="">
+              <div
+                class="stat-number text-2xl font-bold text-comet lg:text-3xl 2xl:text-4xl"
+                data-target="5000"
+                data-suffix="+"
+              >
+                5,000+
+              </div>
+              <div class="text-slateGrey md:text-base lg:text-lg">
+                restaurants
+              </div>
+            </div>
+            <img
+              src="https://b.zmtcdn.com/data/o2_assets/d19ec60986487a77bcb026e5efc3325f1742908200.png"
+              alt="menu icon"
+              class="ml-4 max-h-10 lg:max-h-14 2xl:ml-8"
+            />
+          </div>
+          <div
+            class="h-9 lg:h-12 xl:h-16 w-1 border-l border-lavenderMist"
+          ></div>
+          <div class="flex items-center">
+            <div class="">
+              <div
+                class="stat-number text-2xl font-bold text-comet lg:text-3xl 2xl:text-4xl"
+                data-target="800"
+                data-suffix="+"
+              >
+                800+
+              </div>
+              <div class="text-slateGrey md:text-base lg:text-lg">Places</div>
+            </div>
+            <img
+              src="https://b.zmtcdn.com/data/o2_assets/e7533c4081d6140da37b9f430cb7b8051743006192.png"
+              alt="menu icon"
+              class="ml-4 max-h-10 lg:max-h-14 2xl:ml-8"
+            />
+          </div>
+          <div
+            class="h-9 lg:h-12 xl:h-16 w-1 border-l border-lavenderMist"
+          ></div>
+          <div class="flex items-center">
+            <div class="">
+              <div
+                class="stat-number text-2xl font-bold text-comet lg:text-3xl 2xl:text-4xl"
+                data-target="3"
+                data-suffix=" million+"
+              >
+                3 million+
+              </div>
+              <div class="text-slateGrey md:text-base lg:text-lg">
+                orders delivered
+              </div>
+            </div>
+            <img
+              src="https://b.zmtcdn.com/data/o2_assets/713443cc5944ce4284d7e49e75e2aacf1742466222.png"
+              alt="menu icon"
+              class="ml-4 max-h-10 lg:max-h-14 2xl:ml-8"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section">
+        <div class="story-inner">
+          <span class="story-eyebrow">Why Food Hub</span>
+          <h2 class="story-title">Built for Kolkata’s <span>appetite</span></h2>
+
+          <div class="story-grid">
+            <div class="story-card">
+              <span class="story-icon">01</span>
+              <h3>Food</h3>
+              <p>
+                From roadside phuchka stalls to fine dining, every kitchen on
+                Food Hub is verified for quality, hygiene and taste before it
+                ever reaches your feed.
+              </p>
+            </div>
+            <div class="story-card">
+              <span class="story-icon">02</span>
+              <h3>Restaurants</h3>
+              <p>
+                We give local restaurant owners the tools to reach new
+                customers, manage orders and grow their business without giving
+                up what makes their food theirs.
+              </p>
+            </div>
+            <div class="story-card">
+              <span class="story-icon">03</span>
+              <h3>Business</h3>
+              <p>
+                A dedicated partner team, transparent payouts, and delivery that
+                runs on time — so restaurant partners can focus on the one thing
+                that matters: what's on the plate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>Copyright &copy; | All rights reserved</footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
