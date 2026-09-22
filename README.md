@@ -37,6 +37,7 @@ Each project or exercise focuses on a specific HTML concept and is organized for
 
 * HTML5
 * CSS3 (for styling practice)
+* JavaScript
 
 ## 📈 Learning Journey
 
@@ -47,12 +48,6 @@ This repository will continue to grow as I explore:
 * 🔜 JavaScript
 * 🔜 DOM Manipulation
 * 🔜 Frontend Projects
-
-## 👨‍💻 Author
-
-**Niladri Pal**
-
-* GitHub: **[@RipperdocNiladri](https://github.com/RipperdocNiladri)**
 
 ---
 
