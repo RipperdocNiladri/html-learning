@@ -51,4 +51,6 @@ This repository will continue to grow as I explore:
 * 🔜 Frontend Projects
 ---
 
-⭐ If you find this repository useful, feel free to star it and follow my learning journey!
+# Author
+
+**Niladri Pal**
