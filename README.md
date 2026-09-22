@@ -44,11 +44,11 @@ Each project or exercise focuses on a specific HTML concept and is organized for
 This repository will continue to grow as I explore:
 
 * 🔜 Advanced CSS
+* 🔜 Learn React, Next JS
 * 🔜 Responsive Web Design
 * 🔜 JavaScript
 * 🔜 DOM Manipulation
 * 🔜 Frontend Projects
-
 ---
 
 ⭐ If you find this repository useful, feel free to star it and follow my learning journey!
