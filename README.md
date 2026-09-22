@@ -43,6 +43,7 @@ Each project or exercise focuses on a specific HTML concept and is organized for
 This repository will continue to grow as I explore:
 
 * 🔜 Advanced CSS
+* 🔜 Learn React, Next JS
 * 🔜 Responsive Web Design
 * 🔜 JavaScript
 * 🔜 DOM Manipulation
@@ -51,8 +52,6 @@ This repository will continue to grow as I explore:
 ## 👨‍💻 Author
 
 **Niladri Pal**
-
-* GitHub: **[@RipperdocNiladri](https://github.com/RipperdocNiladri)**
 
 ---
 
