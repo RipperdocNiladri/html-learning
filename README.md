@@ -49,8 +49,5 @@ This repository will continue to grow as I explore:
 * 🔜 JavaScript
 * 🔜 DOM Manipulation
 * 🔜 Frontend Projects
----
 
-# Author
-
-**Niladri Pal**
+# Learning New Things 
